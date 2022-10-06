@@ -1,4 +1,4 @@
-# Densidad de población de los barrios de Málaga en 2021
+# Densidad de población en barrios de Málaga, 2021
 
 En este ejercicio crearemos un mapa que muestre gráficamente la densidad de población en el municipio de Málaga. Para ello, utilizaremos las siguientes fuentes de datos del Ayuntamiento:
 
@@ -22,7 +22,7 @@ Añadimos una nueva capa virtual a través del menú con la siguiente consulta:
 
 Asignamos el nombre _habitantes_ a la capa. Esta capa es en realidad una reducción de los datos de la capa anterior para proporcionar el número de habitantes por barrio.
 
-<sub>Debido a un bug en la versión 3.22, la capa virtual se ha creado de una forma alternativa, mediante la consola python:
+<sub>Debido a un bug en la versión 3.22 de QGIS, la capa virtual se ha creado de una forma alternativa, mediante la consola python:
 
 ```
 query="SELECT BARRIO, COUNT(BARRIO) as 'habitantes' from padronbarrios Group by BARRIO"
